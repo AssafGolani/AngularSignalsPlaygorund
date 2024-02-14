@@ -28,8 +28,8 @@ export class UserlistComponent {
 }
 
 function concatUserNames(users: User[]): ModifiedUser[] {
-  return users.map(({ name, lastName, ...user }) => ({
-    ...user,
+  return users.map(({ name, lastName, ...users }) => ({
+    ...users,
     displayName: `${name} ${lastName}`,
   }));
 }
