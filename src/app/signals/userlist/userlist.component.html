@@ -1,0 +1,6 @@
+<input />
+<ul>
+  @for(user of filteredUsers(); track user.id) {
+  <li>{{ user.name }} {{ user.lastName }}</li>
+  }
+</ul>
